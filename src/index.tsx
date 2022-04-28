@@ -38,6 +38,7 @@ function withProxy<
   mapActions?: (s: Store) => A
 ) {
   return function WrappedComponent(props: Omit<P, keyof (S & A)>) {
+    console.log('---',store)
     const snap = useSnapshot(store)
     const state = mapState?.(snap as Store) ?? {}
     const actions = mapActions?.(store) ?? {}

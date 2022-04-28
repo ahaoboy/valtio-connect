@@ -1,6 +1,6 @@
 {
   "name": "valtio-connect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "import": "./dist/index.mjs",
@@ -17,15 +17,16 @@
   "author": "阿豪boy",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "^18.0.8",
     "cross-env": "^7.0.3",
-    "react": "^17.0.0",
     "tsup": "^5.12.6",
     "typescript": "^4.6.3",
+    "react": "^17.0.0",
+    "@types/react": "^17.0.0",
     "valtio": "^1.6.0"
   },
   "peerDependencies": {
-    "react": "^17.0.0",
+    "@types/react": "^17.0.0",
+    "react": "^17.0.0 || ^18.0.0",
     "valtio": "^1.6.0"
   }
 }
